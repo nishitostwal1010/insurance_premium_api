@@ -1,7 +1,6 @@
 # 🛡️ Insurance Premium Prediction API
 
 This is a machine learning-powered REST API built with **FastAPI** that predicts the insurance premium category (`Low`, `Medium`, or `High`) based on user attributes such as age, weight, height, income, lifestyle, and city.
-
 🛠️ This project was developed as part of the learning journey to understand and implement containerization using Docker.
 
 ---
@@ -152,6 +151,7 @@ data/insurance.csv
 Public Docker image available at:
 
 🔗 [`nishitostwal123/insurance_premium_api`](https://hub.docker.com/r/nishitostwal123/insurance_premium_api)
+
 The Docker image is meant for **serving the prediction API only**.  
 Training notebooks and datasets are excluded.
 
