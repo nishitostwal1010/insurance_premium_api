@@ -20,21 +20,29 @@ This is a machine learning-powered REST API built with **FastAPI** that predicts
 ```
 
 insurance_premium_api/
-├── app.py                      # FastAPI routes (entrypoint)
-├── Dockerfile                  # Docker image setup
-├── requirements.txt            # Project dependencies
+├── app.py                      # Main FastAPI app with API routes
+├── Dockerfile                  # Docker image configuration to containerize the app
+├── requirements.txt            # Python dependencies for the project
+│
 ├── model/
-│   ├── model.pkl               # Trained RandomForest model
-│   └── predict.py              # Logic to generate predictions
+│   ├── model.pkl               # Trained machine learning model (Random Forest)
+│   └── predict.py              # Prediction logic using the trained model
+│
 ├── schema/
-│   ├── user_input.py           # Validates and transforms user input
-│   └── prediction_response.py  # Defines API response schema
+│   ├── user_input.py           # Pydantic model for validating and transforming incoming user data
+│   └── prediction_response.py  # Pydantic model for formatting prediction response
+│
+├── config/
+│   └── city_tier.py            # Lists of Tier 1 and Tier 2 cities used to compute city_tier
+│
 ├── notebooks/
-│   └── fastapi_ml_model.ipynb # Notebook for training the model
+│   └── fastapi_ml_model.ipynb  # Jupyter notebook for training and exporting the ML model
+│
 ├── data/
-│   └── insurance.csv # Dataset used for training
+│   └── insurance.csv           # Dataset used for training the model (optional for reproducibility)
 
-````
+
+```
 
 ---
 
