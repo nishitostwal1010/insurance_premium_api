@@ -1,6 +1,7 @@
 # 🛡️ Insurance Premium Prediction API
 
 This is a machine learning-powered REST API built with **FastAPI** that predicts the insurance premium category (`Low`, `Medium`, or `High`) based on user attributes such as age, weight, height, income, lifestyle, and city.
+
 🛠️ This project was developed as part of the learning journey to understand and implement containerization using Docker.
 
 ---
