@@ -22,6 +22,7 @@ This is a machine learning-powered REST API built with **FastAPI** that predicts
 ```
 
 insurance_premium_api/
+│
 ├── app.py                      # Main FastAPI app with API routes
 ├── Dockerfile                  # Docker image configuration to containerize the app
 ├── requirements.txt            # Python dependencies for the project
@@ -41,7 +42,7 @@ insurance_premium_api/
 │   └── fastapi_ml_model.ipynb  # Jupyter notebook for training and exporting the ML model
 │
 ├── data/
-│   └── insurance.csv           # Dataset used for training the model (optional for reproducibility)
+    └── insurance.csv           # Dataset used for training the model (optional for reproducibility)
 
 
 ```
